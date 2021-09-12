@@ -10,7 +10,7 @@ Read carefully the documentation on how to set up the game and how to use it.
 
 2. Place the pgns in any folder where they will be safe (if you delete those files the game will not work).
 
-3. Install the lbe extension. [Check this documentation if you don't know how.](https://christinna9031.github.io/LBDocumentation/setup.html#extensions) It will install a new deck called "ChessGame by SebasF". The next steps will use buttons of this deck.
+3. Install the lbe extension. [Check this documentation if you don't know how](https://christinna9031.github.io/LBDocumentation/setup.html#extensions). It will install a new deck called "ChessGame by SebasF". The next steps will use buttons of this deck.
 
 4. Buttons in the deck have 4 different colours:
 
@@ -85,3 +85,15 @@ Of course, the deck will recognise each player and will avoid someone to play if
 ## The End of the Game
 
 The extension recognises all the possible ends of a game, except draw offers (can be added in a future release if requested). In case of mate, stalemate, repetition or 50 moves rules, it will show a screen message in the ChessAlerts text source.
+
+## Miscellaneous
+
+* The deck will create a file called game.ini in the Receiver's folder with the pgn of the game. Can be useful if you plan to analyze the game afterwards in lichess or another website. You can change the name of the file, it's saved at the end of the green "Movement" button. If you play more than one game, all the games will be saved. But in your next stream the old pgns will be replaced. If you want to keep them all you can save them somewhere else after the stream or edit the button to use the date as the name file.
+
+* Clear All Button: This button will clear all the variables and stacks that the extension uses. There are lots of them, but most are auto-deleted after using them. Useful if you want to clean LB, but not important for the game to work.
+
+* Don't edit the deck! Only the black "Messages and Translation" button should be edited. The game is pretty complex and you have to be an advanced LB user to tweak it. It has many comments to help you with that. But, as I said, better to don't do it.
+
+* I think the extension should work with LB 1.43. But I force the 1.44 version because new is better. Always keep LB updated, new cool features are introduced in every new version!
+
+* There are many improvements to be made to the extension, but it works as it is. If you have any suggestion you can ping me in the [LioranBoard discord server](https://discord.gg/dXez8Zh).
