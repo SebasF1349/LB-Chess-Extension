@@ -22,7 +22,7 @@ Read carefully the documentation on how to set up the game and how to use it.
 
     * **Blue buttons**: Just titles so you know what the green buttons in the left do. They don't do anything.
 
-5. First you need to complete the "Messages and Translation" button. Open it in the receiver (right click -> edit commands). Although the Math: Change Variable commands are already prefill with messages (in English) you may want to edit them for a more personalized experience (also, it's a good idea to translate it to your language if it's not English). Remember to use "" in the boxes. __*The first two Math: Change Variable (chessPath and username) MUST BE FILLED*__. The button has a lot of comments to understand where each word or phrase will be used. But some may need more clarification:
+5. First you need to fill information in the "Messages and Translation" button. Open it in the receiver (right click -> edit commands). Although the Math: Change Variable commands are already prefill with messages (in English) you may want to edit them for a more personalized experience (also, it's a good idea to translate it to your language if it's not English). Remember to use "" in the boxes. __*The first two Math: Change Variable (chessPath and username) MUST BE FILLED*__. The button has a lot of comments to understand where each word or phrase will be used. But some may need more clarification:
 
     * **chessPath**: The file path of the folder cointaining the pgn files downloaded with the extension. Remember to change / to \ (for example, "C:/Users/SebasF/Documents/LioranBoard Receiver(PC)/Chess").
 
