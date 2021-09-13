@@ -6,7 +6,7 @@ The extension includes a pretty complex deck to play, fully controllable with ch
 Read carefully the documentation on how to set up the game and how to use it.
 
 # Set up
-1. Download the zip file from releases. The file contains a .lbe file (the extension) and 13 pgn files (the 12 pieces and the chessboard).
+1. [Download the zip file from releases](https://github.com/SebasF1349/LB-Chess-Extension/releases/). The file contains a .lbe file (the extension) and 13 pgn files (the 12 pieces and the chessboard).
 
 2. Place the pgns in any folder where they will be safe (if you delete those files the game will not work).
 
