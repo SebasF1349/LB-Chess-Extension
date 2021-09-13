@@ -86,7 +86,7 @@ Of course, the deck will recognise each player and will avoid someone to play if
 
 The extension recognises all the possible ends of a game, except draw offers (can be added in a future release if requested). In case of mate, stalemate, repetition or 50 moves rules, it will show a screen message in the ChessAlerts text source.
 
-## Miscellaneous
+# Miscellaneous
 
 * The deck will create a file called game.ini in the Receiver's folder with the pgn of the game. Can be useful if you plan to analyze the game afterwards in lichess or another website. You can change the name of the file, it's saved at the end of the green "Movement" button. If you play more than one game, all the games will be saved. But in your next stream the old pgns will be replaced. If you want to keep them all you can save them somewhere else after the stream or edit the button to use the date as the name file.
 
