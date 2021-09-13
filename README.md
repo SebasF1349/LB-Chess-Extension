@@ -12,7 +12,7 @@ Read carefully the documentation on how to set up the game and how to use it.
 
 3. Install the lbe extension. [Check this documentation if you don't know how](https://christinna9031.github.io/LBDocumentation/setup.html#extensions). It will install a new deck called "ChessGame by SebasF". The next steps will use buttons of this deck.
 
-4. Buttons in the deck have 4 different colours:
+4. Buttons in the deck have 4 different colors:
 
     * **Black buttons**: Used for the setup. The one at the bottom opens the documentation (this site) for you, in case you need it to reinstall or make some changes.
 
@@ -24,19 +24,19 @@ Read carefully the documentation on how to set up the game and how to use it.
 
 5. First you need to fill information in the "Messages and Translation" button. Open it in the receiver (right click -> edit commands). Although the Math: Change Variable commands are already prefill with messages (in English) you may want to edit them for a more personalized experience (also, it's a good idea to translate it to your language if it's not English). Remember to use "" in the boxes. __*The first two Math: Change Variable (chessPath and username) MUST BE FILLED*__. The button has a lot of comments to understand where each word or phrase will be used. But some may need more clarification:
 
-    * **chessPath**: The file path of the folder cointaining the pgn files downloaded with the extension. Remember to change / to \ (for example, "C:/Users/SebasF/Documents/LioranBoard Receiver(PC)/Chess").
+    * **chessPath**: The file path of the folder containing the pgn files downloaded with the extension. Remember to change / to \ (for example, "C:/Users/SebasF/Documents/LioranBoard Receiver(PC)/Chess").
 
     * **Username**: Your Twitch username, in lowercase.
 
-    * **Resign command (all lower case)**: This will be the chat command to let the players resign. By default is "resign", which means that if a player types $resign he/she is resigning (or is voting for resigning in the group votation). You can change it to whatever you want, but it must be in lowercase.
+    * **Resign command (all lower case)**: This will be the chat command to let the players resign. By default, is "resign", which means that if a player types $resign he/she is resigning (or is voting for resigning in the group votation). You can change it to whatever you want, but it must be in lowercase.
 
     * **chessPiecesTranslation variable**: Type 0 if you want to use the name pieces in English (q for queen, k for king, and so on). If you want to translate them to your language, type 1 and rewrite the letters inside the if below (always in uppercase).
 
-        ***BE CAREFUL***: If one of the name pieces in your language is K, Q, R, B or K, it can have unexpected consequences. The extensions works in English, so when you translate you are replacing letters. For example, in Icelandic the knight is called riddari, so when translating from English it will change the N to a R, and then the R (rook) to H (Hrkur) , transforming a knight into a rook. To avoid that, you will need to manually change the order of the translation in the green Move Input button (search two if statements chessPiecesTranslation == 1)
+        ***BE CAREFUL***: If one of the name pieces in your language is K, Q, R, B or K, it can have unexpected consequences. The extension works in English, so when you translate you are replacing letters. For example, in Icelandic the knight is called riddari, so when translating from English it will change the N to a R, and then the R (rook) to H (Hrkur) , transforming a knight into a rook. To avoid that, you will need to manually change the order of the translation in the green Move Input button (search two if statements chessPiecesTranslation == 1)
 
 6. Open the StreamDeck and press the black "Create Chess Scene" button. It will create the "ChessGame by SebasF" scene in OBS. If it's not created or it's created but you can't see the chessboard and pieces in the starting position, check if LB is connected to OBS or if you complete correctly the chessPath in the step 5.
 
-7. The scene has 2 text sources. "ChessMoves" will show the votes in any group votation. "ChessAlerts" will show any notification, like "Check", "Stalemate" or "White lost on time". They are very basic text sources at creation. You can edit them in OBS, like moving them, changing fonts, size, colour or even some animation. Let your imagination fly.
+7. The scene has 2 text sources. "ChessMoves" will show the votes in any group. "ChessAlerts" will show any notification, like "Check", "Stalemate" or "White lost on time". They are very basic text sources at creation. You can edit them in OBS, like moving them, changing fonts, size, colour or even some animation. Let your imagination fly.
 
 8. The board and pieces use very precise numbers for the movement and placement, so DON'T MOVE OR CHANGE THE IMAGE SOURCES. My advice is to use the scene as a nested scene to fit it with your layout.
 
@@ -52,7 +52,7 @@ There are 3 different ways to play.
 
 * **"Public vs Public"**: The viewers play between them. The green  Colour Division button gives every viewer (that want to play) a colour "group" (white or black).
 
-In every move, the players have only 1 minute to play. If it's a group votation, then after 1 minutes you can't vote anymore and the move with more votes will be played. If there is no move in 60 seconds, then you lose on time!
+In every move, the players have only 1 minute to play. If it's a group vote, then after 1 minutes you can't vote anymore and the move with more votes will be played. If there is no move in 60 seconds, then you lose on time!
 
 The best way to play is using the chat commands.
 
@@ -64,11 +64,11 @@ The best way to play is using the chat commands.
 
     * **$chessng w** or **$chessng b**: Starts a "One vs Public" game. w means the broadcaster will play with the white pieces, b for the black pieces.
 
-    * **$chessng**: Starts a "Public vs Public" game. The viewers will have 1 minute to join the game (check **$playchess**), and the deck will decide which colour they are assigned. After the game is started, they can still join. As the viewers play between them, you can now relax and what the game.
+    * **$chessng**: Starts a "Public vs Public" game. The viewers will have 1 minute to join the game (check **$playchess**), and the deck will decide which color they are assigned. After the game is started, they can still join. As the viewers play between them, you can now relax and what the game.
 
-* **$chessnb** (chess new board): Another "only broadcaster" command. Resets the chessbaord and the game. Useful to finish the game or move the pieces to the initial position. If you use **$chessng** it will reset automatically, so there is no need to use **$chessnb** before starting a game.
+* **$chessnb** (chess new board): Another "only broadcaster" command. Resets the chessboard and the game. Useful to finish the game or move the pieces to the initial position. If you use **$chessng** it will reset automatically, so there is no need to use **$chessnb** before starting a game.
 
-* **$playchess**: Let the viewers join a "Public vs Public" game. The deck will decide with which colour they will play. If they use the command before starting the game, all the "inscriptions" will be split between white and black. If the game is in progress, they still can join and the deck will decide the colour with a chat message.
+* **$playchess**: Let the viewers join a "Public vs Public" game. The deck will decide with which colour they will play. If they use the command before starting the game, all the "inscriptions" will be split between white and black. If the game is in progress, they still can join and the deck will decide the color with a chat message.
 
 * **$[chessmove]**: The key command to move! If you are playing alone, doing $e4 will move the pawn to e4 in the board. If the viewers are playing as a team, each vote will be shown in the screen and the move with more votes will be played. The extension will not allow illegal moves. All legal moves are possible, even castling (O-O), promoting (c8Q) or en passant! But be careful, you need to know the algebraic notation very well! You can also vote for resigning with **$resign** (or what you decided in step 5 of set up).
 
@@ -84,7 +84,7 @@ Of course, the deck will recognise each player and will avoid someone to play if
 
 ## The End of the Game
 
-The extension recognises all the possible ends of a game, except draw offers (can be added in a future release if requested). In case of mate, stalemate, repetition or 50 moves rules, it will show a screen message in the ChessAlerts text source.
+The extension recognizes all the possible ends of a game, except draw offers (can be added in a future release if requested). In case of mate, stalemate, repetition or 50 moves rules, it will show a screen message in the ChessAlerts text source.
 
 # Miscellaneous
 
