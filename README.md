@@ -38,7 +38,7 @@ Read carefully the documentation on how to set up the game and how to use it.
 
 7. The scene has 2 text sources. "ChessMoves" will show the votes in any group. "ChessAlerts" will show any notification, like "Check", "Stalemate" or "White lost on time". They are very basic text sources at creation. You can edit them in OBS, like moving them, changing fonts, size, colour or even some animation. Let your imagination fly.
 
-8. The board and pieces use very precise numbers for the movement and placement, so DON'T MOVE OR CHANGE THE IMAGE SOURCES. My advice is to use the scene as a nested scene to fit it with your layout.
+8. The board and pieces use very precise numbers for the movement and placement, so DON'T MOVE, SCALE OR CHANGE THE IMAGE SOURCES. My advice is to use the scene as a nested scene to fit it with your layout.
 
 9. Set up is completed! You can now play with your viewers.
 
